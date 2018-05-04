@@ -1,3 +1,39 @@
+/*Project 1 - Change Maker
+
+Problem: 
+
+you have to give someone change 
+
+what coins do you give that person? 
+
+Requirements: 
+
+takes user input 
+
+displays the change breakdown as output
+
+1. Understand and Define the Problem 
+
+ ask user for input, US coins (quarter, dime, nickel, penny),  max change: 99¢  display coin output ,
+
+ What’s involved?  
+
+interview users. What are their expectations? What data do they need to access? write a requirements analysis report
+
+
+2. Determine Input and Output 
+
+Typed input by user: amount of change requested (an integer between 1 and 99) 
+
+Printed output:  
+
+Number of quarters given  
+
+Number of dimes given  
+
+Number of nickels given  
+
+Number of pennies given*/
 package projects;
 
 import java.util.Scanner;
@@ -27,9 +63,9 @@ public class Project1 {
 				int quarters = change / 25;
 				int changeLeft = change % 25;
 				int dimes = changeLeft / 10;
-				int leftChange = changeLeft % 10;
-				int nickels = leftChange / 5;
-				int pennies = leftChange % 5;
+				changeLeft = changeLeft % 10;
+				int nickels = changeLeft / 5;
+				int pennies = changeLeft % 5;
 				
 				//output of how much change they get and how it is divided into quarters, dimes, nickels, and pennies
 				System.out.println("Your change is: ¢" + change);

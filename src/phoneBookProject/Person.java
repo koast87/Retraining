@@ -4,19 +4,23 @@ import java.util.Comparator;
 
 public class Person {
 	
+	//variables
 	private String firstName;
 	private String lastName;
 	private String fullName;
 	private String middleName = "";
 	private Address address = new Address();
 	
+	//default constructor
 	public Person(){}
 	
+	//constructor with parameters 
 	public Person(String firstName, String lastName){
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
 	
+	//
 	public Person(String firstName, String lastName, String street,String city,String state,String zip,String phoneNum){
 		this.firstName = firstName;
 		this.lastName = lastName;
